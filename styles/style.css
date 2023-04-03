@@ -1,0 +1,49 @@
+@font-face {
+    font-family: Inter;
+    src: url(../assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+:root {
+    --paragraph-color: hsl(236, 13%, 42%);
+    --active-color: hsl(35, 77%, 62%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Inter, sans-serif;
+}
+
+header, main, footer {
+    margin: 0 100px 0 100px;
+}
+
+header{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    margin-left: auto;
+}
+
+nav > ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--paragraph-color);
+}
+
+a:focus, a:hover {
+    color: var(--active-color);
+}
