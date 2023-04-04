@@ -28,12 +28,12 @@ body {
 
 header, main, footer {
    width: 80%;
-   margin: auto;
+   margin: 0 auto;
 }
 
 header{
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     display: flex;
     align-items: center;
 }
@@ -60,36 +60,30 @@ a:focus, a:hover {
 main {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas:
-        "img new"
-        "main new";
     gap: 20px;
 }
 
-main > img {
-    grid-area: img;
-    align-self: stretch;
+#main-story > img {
     width: 100%;
 }
 
-#main-story {
-    grid-area: main;
+#story-container {
+    margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 20px;
-    margin-top: 20px;
 }
 
-#main-story > h1 {
+#story-container > h1 {
     grid-row: 1 / 3;
     font-size: 3rem;
 }
 
-#main-story > a {
+#story-container > a {
     align-self: start;
     justify-self: start;
+    text-align: center;
     padding: 15px 30px;
     background-color: var(--soft-red);
     color: var(--body-bg);
@@ -99,7 +93,6 @@ main > img {
 }
 
 #new-stories {
-    grid-area: new;
     background-color: var(--stories-bg);
     padding: 30px 20px 30px 20px;
 }
@@ -126,4 +119,31 @@ main > img {
 #new-stories > .new-story > h3 {
     margin-bottom: 20px;
     color: var(--body-bg);
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.related-articles {
+    display: flex;
+    gap: 20px;
+}
+
+.related-articles > img {
+    width: 25%;
+}
+
+.related-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.related-container > h2{
+    color: var(--new-stories-color);
 }
