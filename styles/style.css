@@ -20,6 +20,8 @@
 }
 
 body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
     font-family: Inter, sans-serif;
     background-color: var(--body-bg);
     min-height: 100vh;
