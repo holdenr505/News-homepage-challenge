@@ -48,6 +48,10 @@ nav {
     margin-left: auto;
 }
 
+nav > img {
+    display: none;
+}
+
 nav > ul {
     display: flex;
     gap: 30px;
@@ -149,13 +153,11 @@ footer {
 }
 
 .related-articles > img {
-    width: 30%;
+    width: 100px;
 }
 
 .related-container {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     gap: 10px;
 }
 
@@ -169,6 +171,10 @@ footer {
     }
 
     #story-container {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
         grid-template-columns: 1fr;
     }
 }
@@ -187,7 +193,28 @@ footer {
     }
 
     nav {
-        display: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        padding: 50px;
+        /*relative to initial containing block
+        or <html>*/
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 50%;
+        background-color: var(--body-bg);
+    }
+
+    nav > img {
+        display: inline;
+        align-self: flex-end;
+    }
+
+    nav > ul {
+        flex-direction: column; 
     }
 
     header > img:nth-child(2) {
