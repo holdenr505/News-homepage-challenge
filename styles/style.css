@@ -40,6 +40,10 @@ header{
     align-items: center;
 }
 
+header > img:nth-child(2) {
+    display: none;
+}
+
 nav {
     margin-left: auto;
 }
@@ -88,6 +92,7 @@ main {
 #story-container > h1 {
     grid-row: 1 / 3;
     font-size: 3rem;
+    font-weight: 800;
 }
 
 #story-container > a {
@@ -165,5 +170,28 @@ footer {
 
     #story-container {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+    
+    #story-container {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        display: none;
+    }
+
+    header > img:nth-child(2) {
+        display: inline;
+        margin-left: auto;
     }
 }
