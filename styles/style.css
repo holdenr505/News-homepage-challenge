@@ -112,6 +112,10 @@ main {
     letter-spacing: 3px;
 }
 
+#story-container > a:hover {
+    background-color: black;
+}
+
 #new-stories {
     background-color: var(--stories-bg);
     padding: 30px 20px 30px 20px;
