@@ -24,7 +24,7 @@ challenge
 ### Links
 
 - Solution URL: [Solution](https://www.frontendmentor.io/solutions/response-news-homepage-using-css-grid-and-flexbox-AMC-q-8h2i)
-- Live Site URL: [Live Site](https://omni23.github.io/News-homepage-challenge/)
+- Live Site URL: [Live Site](https://where-da-bones.github.io/News-homepage-challenge/)
 
 ### Built with
 
