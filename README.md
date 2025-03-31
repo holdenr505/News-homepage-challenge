@@ -36,4 +36,4 @@ challenge
 
 ## Author
 
-- Omni23 - [@omni23](https://www.frontendmentor.io/profile/omni23)
+- Holdenr505 - [@holdenr505](https://www.frontendmentor.io/profile/holdenr505)
